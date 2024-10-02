@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9dc6e;
+            text-align: center;
+            padding: 50px;
+        }
+        .birthday-container {
+            background-color: #58b893;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            padding: 20px;
+            max-width: 600px;
+            width: 100%;
+            transition:transform 2000s;
+            animation: move 4s infinite;
+        }
+        .birthday-container:hover{
+            transform: rotate(180deg);
+
+        }
+        .birthday-photo {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .birthday-message {
+            font-size: 35px;
+            color: #78603a;
+            margin-bottom: 30px;
+        }
+        .birthday-wish {
+            font-size: 18px;
+            color: #555;
+        }
+        @keyframes move {
+            0% {left:0; top:0; }
+            25% {left: 200px; top:0; }
+            50% { left:0;top:200px; }
+            75% { left: 0; top: 200px;}
+            100% { left: 0; top:0 ; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="birthday-container">
+        <img src="venom.jpg" alt="Birthday Photo" class="birthday-photo">
+        <div class="birthday-message">Happy Birthday VENOM</div>
+        <div class="birthday-wish">Wishing you a day filled with love, joy, and happiness. May all your dreams come true!</div>
+    </div>
+</body>
+</html>
